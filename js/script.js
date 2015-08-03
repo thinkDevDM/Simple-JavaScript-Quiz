@@ -31,6 +31,8 @@ function submitAnswers() {
     var results = document.getElementById("results");
     results.innerHTML = "<h3>You scored <span>" + score + "</span> out of <span>" + total + "</span>.</h3>"
     alert("You scored " + score + " out of " + total + ".");
-    
+    if(score < 4) {
+        alert("You might want to brush up on your JS fundamentals.");
+    }
     return false;
 }
